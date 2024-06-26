@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer.tsx";
 
 const Layout = () => {
     return (
-        <div>
+        <div className='flex flex-col min-h-dvh  '>
             <Navbar/>
             <Outlet/>
             <Footer/>

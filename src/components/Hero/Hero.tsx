@@ -1,14 +1,19 @@
 import b1 from '../../assets/blob_1.svg'
 import theo from "../../assets/theodolite.png";
+import {Link} from "react-router-dom";
 
 
 const Hero = () => {
     return (
         <div className='flex flex-row justify-between px-36 bg-background'>
-            <div className='flex flex-col justify-center items-center space-y-6'>
-                <h1 className='text-4xl text-foreground font-bold'>Welcome to GeoCom</h1>
-                <p className='text-lg text-foreground'>Home of Geospatial computations</p>
-                <button className='bg-primary text-white px-4 py-2 rounded-md'>Get Started</button>
+            <div className='flex flex-col justify-center items-center  space-y-6'>
+                <h1 className='text-5xl text-foreground font-bold'>Welcome to GeoCom</h1>
+                <p className='text-lg text-foreground'>Simplify Your Surveying Tasks</p>
+                <Link to='/auth/login'>
+                    <button className='bg-destructive  text-white px-4 py-2 rounded-md'>
+                        Get Started
+                    </button>
+                </Link>
 
             </div>
             <div className='relative'>
